@@ -1,13 +1,16 @@
-import React from "react";
+import Container from "./Container";
+import Logo from "./Logo";
+import MainMenu from "./main-menu";
 
-type Props = {};
 
-const Header = (props: Props) => {
-  return <header className="bg-red-500 fixed left-0 top-0 w-full">
-    <div className="flex items-center justify-between container mx-auto">
-        <section>LOGO</section>
-        <section>MENU</section>
-    </div>
+const Header = () => {
+  return <header className=" fixed left-0 top-0 w-full p-5 z-40">
+    <Container className="flex items-center justify-between" >
+        <section><Logo/></section>
+        <section>
+          <MainMenu/>
+        </section>
+    </Container>
   </header>;
 }; 
 
