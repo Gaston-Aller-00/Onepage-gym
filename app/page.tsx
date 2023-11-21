@@ -1,10 +1,11 @@
+import Hero from '@/components/shared/Hero'
 import React from 'react'
 
 type Props = {}
 
 const Page = (props: Props) => {
   return (
-    <div>hola gente </div>
+    <div><Hero/> </div>
   )
 }
 
