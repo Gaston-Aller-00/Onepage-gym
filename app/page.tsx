@@ -1,11 +1,14 @@
-import Hero from '@/components/shared/Hero'
+import Hero from '@/components/Hero'
+import Services from '@/components/Services'
 import React from 'react'
 
 type Props = {}
 
 const Page = (props: Props) => {
   return (
-    <div><Hero/> </div>
+    <div><Hero/> 
+    <Services/>
+    </div>
   )
 }
 
