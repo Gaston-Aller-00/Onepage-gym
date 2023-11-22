@@ -1,17 +1,36 @@
+'use client';
+
+import { useState } from "react";
 import Container from "./Container";
 import Logo from "./Logo";
+import MenuMobile from "./MenuMobile";
 import MainMenu from "./main-menu";
-
+import { RiMenu3Line } from "react-icons/ri";
 
 const Header = () => {
-  return <header className=" fixed left-0 top-0 w-full p-5 z-40">
-    <Container className="flex items-center justify-between" >
-        <section><Logo/></section>
+
+    const [showMenu, setShowMenu] = useState(false)
+
+  return (
+    <>
+    <header className=" fixed left-0 top-0 w-full p-5 z-40 bg-black">
+      <Container className="flex items-center justify-between">
         <section>
-          <MainMenu/>
+          <Logo />
         </section>
-    </Container>
-  </header>;
-}; 
+        <section className="hidden lg:block">
+          <MainMenu />
+        </section>
+        <section className='lg:hidden'>
+          <button onClick={() => setShowMenu(true)} type="button" className="text-white">
+            <RiMenu3Line size={24}/>
+          </button>
+        </section>
+      </Container>
+    </header>
+    <MenuMobile isOpen={showMenu} onClose={() =>setShowMenu(false) } />
+    </>
+  );
+};
 
 export default Header;
