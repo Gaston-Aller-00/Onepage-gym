@@ -11,7 +11,7 @@ const Plans = () => {
       <Container>
         <Title title="Subscribe to" titlePrimary="Plans" />
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10  ">
-          <Plan name="Satndar" duration={6} price={4800} priceMounth={800} />
+          <Plan name="Standar" duration={6} price={4800} priceMounth={800} />
           <Plan
             name="Fitness"
             duration={12}
