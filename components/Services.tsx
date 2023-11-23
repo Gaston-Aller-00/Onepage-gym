@@ -2,11 +2,12 @@ import Container from "./shared/Container";
 import Servcice from "./ui/Service";
 import Title from "./ui/Title";
 
+//aca van todos los componentes de service
 const Services = () => {
   return (
     <section
       id="services"
-      className="min-h-screen flex items-center justify-center"
+      className="min-h-screen flex items-center justify-center mb-6 lg:mb-0"
     >
       <Container>
         <Title title="Fitness Plans &" titlePrimary="Nutritions" />
