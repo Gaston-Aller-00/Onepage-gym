@@ -1,6 +1,6 @@
 import Container from "../shared/Container";
 import Logo from "../shared/Logo";
-import Tags from "../ui/tags";
+import Tags from "../ui/Tags";
 import Section from "./components/section";
 import { FaGithub,FaLinkedin } from "react-icons/fa";
 //aca van las section con el titulo y el array de stings
