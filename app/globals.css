@@ -6,3 +6,12 @@
 html{
     scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: '#000';
+    border-radius: 10px;
+}
