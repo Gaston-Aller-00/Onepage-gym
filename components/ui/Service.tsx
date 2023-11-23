@@ -1,3 +1,4 @@
+// card service component
 import Image from 'next/image';
 import { FC } from 'react';
 
