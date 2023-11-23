@@ -1,3 +1,4 @@
+//title component
 import { FC } from "react";
 
 interface TitleProps {
