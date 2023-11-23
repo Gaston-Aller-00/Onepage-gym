@@ -2,7 +2,7 @@ import Container from "../shared/Container";
 import Logo from "../shared/Logo";
 import Tags from "../ui/tags";
 import Section from "./components/section";
-
+import { FaGithub,FaLinkedin } from "react-icons/fa";
 //aca van las section con el titulo y el array de stings
 
 const Footer = () => {
@@ -25,12 +25,17 @@ const Footer = () => {
             <Tags text="Gym" />
             <Tags text="Plans" />
             <Tags text="Facilities" />
-            <Tags text="Trainers" active/>
+            <Tags text="Trainers" active />
           </div>
         </section>
       </Container>
-      <div className="bg-primary p-5 text-white text-center">
-        <h5>&copy; 2023 All rights Reserved</h5>
+      <div className="bg-primary p-5 text-white text-center flex items-center justify-center gap-8">
+        <h5>&copy; 2023 All rights Reserved </h5>
+
+        <div className="text-3xl flex items-center justify-center gap-4">
+          <a target="_blanck" href="https://github.com/Gaston-Aller-00"><FaGithub /></a>
+          <a target="_blanck" href="https://www.linkedin.com/in/gaston-aller-170646263/"><FaLinkedin /></a>
+        </div>
       </div>
     </footer>
   );
