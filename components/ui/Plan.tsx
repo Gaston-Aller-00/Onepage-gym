@@ -16,7 +16,7 @@ const Plan: FC<PlanProps> = ({ name, duration, price, priceMounth,active }) => {
         "w-full bg-gray-light/30 p-8 rounded-xl flex flex-col items-center gap-y-10 ", active && ' relative border-2 border-primary'
     )}>
         {active && (
-            <div className="absolute bg-primary text-white py-2 px-4 -top-4 left-1/2 -translate-x-1/2"> <h5>Recomended</h5></div>
+            <div className="absolute bg-primary text-white py-2 px-4 -top-4 left-1/2 -translate-x-1/2 rounded-lg"> <h5>Recomended</h5></div>
         )}
         
       <h2 className="text-3xl text-white font-medium">{name}</h2>
@@ -25,7 +25,7 @@ const Plan: FC<PlanProps> = ({ name, duration, price, priceMounth,active }) => {
       <h3>{priceMounth}/Month</h3>
       <ButtonPrimary
         type="button"
-        text="Select planm"
+        text="Select plan"
         className="border-2 border-primary bg-transparent hover:bg-transparent w-full "
       />
     </div>
