@@ -15,7 +15,7 @@ const ButtonPrimary: FC<ButtonPrimaryProps> = ({type,text,className}) => {
     <button
   type={type}
   className={cn(
-    'py-2 px-4 bg-primary text-white rounded-lg border-2 border-transparent hover:bg-transparent hover:border-primary  hover:text-primary transition-colors duration-300',
+    'py-2 px-4 bg-primary text-white rounded-lg border-2 border-transparent hover:bg-transparent hover:border-primary  hover:text-primary hover:shadow-primary transition-colors duration-300',
     className
   )}
 >
