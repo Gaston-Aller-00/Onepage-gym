@@ -1,7 +1,7 @@
 import Container from "../shared/Container";
 import Logo from "../shared/Logo";
 import Tags from "../ui/Tags";
-import Section from "./components/Section"; 
+import Section from "./components/section";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
